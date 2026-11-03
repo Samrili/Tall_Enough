@@ -1,26 +1,23 @@
-# Cropout Multiplayer
+# Tall Enough — Co-op Multiplayer RTS Extension (Unreal Engine 5.3)
 
-[Demo Cropout Multiplayer](https://github.com/Kubessandra/UE-Cropout-Multiplayer/assets/38230596/e7a69e13-d1b8-4429-8e36-021761c19fe7)
+**Tall Enough** is a 2-player cooperative strategy and island management project developed on **Unreal Engine 5.3** (Blueprints & C++), built by extending the [Unreal Engine Cropout Sample](https://www.unrealengine.com/marketplace/en-US/product/cropout-sample-project) and its Steam multiplayer replication foundation.
 
-Full multiplayer compatibility with Steam of the [Cropout Sample](https://www.unrealengine.com/marketplace/en-US/product/cropout-sample-project) of Unreal Engine
-Using Blueprints and C++ only for some structs.
+---
 
-Feel free to use the repo and report any bugs.
+## Custom Modules & Features Implemented
 
-**Unreal Version**: 5.3
+### 1. Gameplay & Progression Systems (\@Samrili\)
+- **Blacksmith Upgrade System:** Interactive building and unit upgrade mechanics with custom blacksmith textures and state logic.
+- **Game Speed & Editor Controls:** Dynamic in-game speed acceleration toggle and editor mode controls.
+- **End-Game UI & Animations (\UI_EndGame.uasset\):** Custom victory/end-game screen layouts and UI transition animations.
+- **Localization Support:** Multi-language UI text localization setup.
 
-## Features
-All features from cropout are replicated and working in multiplayer
+### 2. Backend & Database Integration (\@TheAtom71\)
+- External database connectivity, table bindings, API authorization rules, and coordinate request synchronization.
 
-- Steam
-- Session Join and Host
-- Solo game
-- Listening Server
-- Dedicated Server
+---
 
-## How to use
-Clone the repo and create a new Unreal Project from this repo.
-
-### Socials
-- [Twitch](https://twitch.tv/kubessandra), you can also find the VOD where we converted the solo game to multiplayer game.
-- [Twitter](https://twitter.com/kubessandra)
+## Technical Specifications
+- **Engine:** Unreal Engine 5.3
+- **Architecture:** Blueprints & C++ Structs
+- **Networking:** Steam SDK Listen-Server & Dedicated-Server Session Replication
